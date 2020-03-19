@@ -1,0 +1,32 @@
+2020-03-17T10:22:43+00:00 CRITICAL Uncaught Error: Call to a member function get_attributes() on boolean in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\woocommerce-rest-api\src\Controllers\Version2\class-wc-rest-product-variations-v2-controller.php:398
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\woocommerce-rest-api\src\Controllers\Version3\class-wc-rest-crud-controller.php(163): WC_REST_Product_Variations_V2_Controller->prepare_object_for_database(Object(WP_REST_Request), false)
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\woocommerce-rest-api\src\Controllers\Version3\class-wc-rest-crud-controller.php(238): WC_REST_CRUD_Controller->save_object(Object(WP_REST_Request), false)
+#2 C:\xampp\htdocs\wordpress\wp-includes\rest-api\class-wp-rest-server.php(946): WC_REST_CRUD_Controller->update_item(Object(WP_REST_Request))
+#3 C:\xampp\htdocs\wordpress\wp-includes\rest-api\class-wp-rest-server.php(329): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#4 C:\xampp\htdo dans C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\woocommerce-rest-api\src\Controllers\Version2\class-wc-rest-product-variations-v2-controller.php à la ligne 398
+
+2020-03-17T10:29:11+00:00 CRITICAL Uncaught Error: Call to a member function get_attributes() on boolean in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\woocommerce-rest-api\src\Controllers\Version2\class-wc-rest-product-variations-v2-controller.php:398
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\woocommerce-rest-api\src\Controllers\Version3\class-wc-rest-crud-controller.php(163): WC_REST_Product_Variations_V2_Controller->prepare_object_for_database(Object(WP_REST_Request), true)
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\woocommerce-rest-api\src\Controllers\Version3\class-wc-rest-crud-controller.php(191): WC_REST_CRUD_Controller->save_object(Object(WP_REST_Request), true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\rest-api\class-wp-rest-server.php(946): WC_REST_CRUD_Controller->create_item(Object(WP_REST_Request))
+#3 C:\xampp\htdocs\wordpress\wp-includes\rest-api\class-wp-rest-server.php(329): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#4 C:\xampp\htdocs dans C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\woocommerce-rest-api\src\Controllers\Version2\class-wc-rest-product-variations-v2-controller.php à la ligne 398
+
+2020-03-17T10:32:12+00:00 CRITICAL Uncaught Error: Call to a member function get_attributes() on boolean in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\woocommerce-rest-api\src\Controllers\Version2\class-wc-rest-product-variations-v2-controller.php:398
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\woocommerce-rest-api\src\Controllers\Version3\class-wc-rest-crud-controller.php(163): WC_REST_Product_Variations_V2_Controller->prepare_object_for_database(Object(WP_REST_Request), true)
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\woocommerce-rest-api\src\Controllers\Version3\class-wc-rest-crud-controller.php(191): WC_REST_CRUD_Controller->save_object(Object(WP_REST_Request), true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\rest-api\class-wp-rest-server.php(946): WC_REST_CRUD_Controller->create_item(Object(WP_REST_Request))
+#3 C:\xampp\htdocs\wordpress\wp-includes\rest-api\class-wp-rest-server.php(329): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#4 C:\xampp\htdocs dans C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\woocommerce-rest-api\src\Controllers\Version2\class-wc-rest-product-variations-v2-controller.php à la ligne 398
+
+2020-03-17T10:40:00+00:00 CRITICAL Uncaught Error: Call to a member function get_attributes() on boolean in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\woocommerce-rest-api\src\Controllers\Version2\class-wc-rest-product-variations-v2-controller.php:398
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\woocommerce-rest-api\src\Controllers\Version3\class-wc-rest-crud-controller.php(163): WC_REST_Product_Variations_V2_Controller->prepare_object_for_database(Object(WP_REST_Request), true)
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\woocommerce-rest-api\src\Controllers\Version3\class-wc-rest-crud-controller.php(191): WC_REST_CRUD_Controller->save_object(Object(WP_REST_Request), true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\rest-api\class-wp-rest-server.php(946): WC_REST_CRUD_Controller->create_item(Object(WP_REST_Request))
+#3 C:\xampp\htdocs\wordpress\wp-includes\rest-api\class-wp-rest-server.php(329): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#4 C:\xampp\htdocs dans C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\woocommerce-rest-api\src\Controllers\Version2\class-wc-rest-product-variations-v2-controller.php à la ligne 398
+

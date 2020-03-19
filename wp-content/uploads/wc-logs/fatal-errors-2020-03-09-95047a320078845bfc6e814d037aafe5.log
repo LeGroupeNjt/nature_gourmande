@@ -1,0 +1,9 @@
+2020-03-09T15:15:52+00:00 CRITICAL Uncaught Error: Call to undefined function WP_Filesystem() in C:\xampp\htdocs\wordpress\wp-content\plugins\clubwpress-updater\includes\clubwp-client.php:398
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(288): CwSlmClient::get_updates()
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(544): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-cron.php(138): do_action_ref_array('clubwordpress_d...', Array)
+#4 {main}
+  thrown dans C:\xampp\htdocs\wordpress\wp-content\plugins\clubwpress-updater\includes\clubwp-client.php à la ligne 398
+

@@ -1,0 +1,2 @@
+16-03-2020 08:50:16 - ERROR - v: 6.5.3 - m: 89,8 MB, u: 0 - cURL error 6: Could not resolve host: www.thenewsletterplugin.com (http_request_failed) - 
+16-03-2020 08:50:17 - ERROR - v: 6.5.3 - m: 90,1 MB, u: 0 - cURL error 6: Could not resolve host: www.thenewsletterplugin.com (http_request_failed) - 

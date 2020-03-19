@@ -1,0 +1,36 @@
+2020-03-14T16:12:45+00:00 CRITICAL Uncaught Error: Call to a member function get_attributes() on boolean in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\woocommerce-rest-api\src\Controllers\Version2\class-wc-rest-product-variations-v2-controller.php:398
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\woocommerce-rest-api\src\Controllers\Version3\class-wc-rest-crud-controller.php(163): WC_REST_Product_Variations_V2_Controller->prepare_object_for_database(Object(WP_REST_Request), true)
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\woocommerce-rest-api\src\Controllers\Version3\class-wc-rest-crud-controller.php(191): WC_REST_CRUD_Controller->save_object(Object(WP_REST_Request), true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\rest-api\class-wp-rest-server.php(946): WC_REST_CRUD_Controller->create_item(Object(WP_REST_Request))
+#3 C:\xampp\htdocs\wordpress\wp-includes\rest-api\class-wp-rest-server.php(329): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#4 C:\xampp\htdocs dans C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\woocommerce-rest-api\src\Controllers\Version2\class-wc-rest-product-variations-v2-controller.php à la ligne 398
+
+2020-03-14T16:13:11+00:00 CRITICAL Uncaught Error: Call to a member function get_attributes() on boolean in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\woocommerce-rest-api\src\Controllers\Version2\class-wc-rest-product-variations-v2-controller.php:398
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\woocommerce-rest-api\src\Controllers\Version3\class-wc-rest-crud-controller.php(163): WC_REST_Product_Variations_V2_Controller->prepare_object_for_database(Object(WP_REST_Request), true)
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\woocommerce-rest-api\src\Controllers\Version3\class-wc-rest-crud-controller.php(191): WC_REST_CRUD_Controller->save_object(Object(WP_REST_Request), true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\rest-api\class-wp-rest-server.php(946): WC_REST_CRUD_Controller->create_item(Object(WP_REST_Request))
+#3 C:\xampp\htdocs\wordpress\wp-includes\rest-api\class-wp-rest-server.php(329): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#4 C:\xampp\htdocs dans C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\woocommerce-rest-api\src\Controllers\Version2\class-wc-rest-product-variations-v2-controller.php à la ligne 398
+
+2020-03-14T16:52:24+00:00 CRITICAL Uncaught Exception: Produit non valide. in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\data-stores\class-wc-product-data-store-cpt.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-data-store.php(159): WC_Product_Data_Store_CPT->read(Object(WC_Product))
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-product.php(135): WC_Data_Store->read(Object(WC_Product))
+#2 C:\xampp\htdocs\wordpress\wp-content\themes\firezy\functions.php(527): WC_Product->__construct(2390)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(290): min_decimal(0)
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(206): WP_Hook->apply_filters(0, Array)
+#5 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1675): apply_filters('woocommerce_qua...', 0, Object(WC_Product_Simple))
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\cart\cart.php(117): woocommerce_quant dans C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\data-stores\class-wc-product-data-store-cpt.php à la ligne 163
+
+2020-03-14T16:54:10+00:00 CRITICAL Uncaught Exception: Produit non valide. in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\data-stores\class-wc-product-data-store-cpt.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-data-store.php(159): WC_Product_Data_Store_CPT->read(Object(WC_Product))
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-product.php(135): WC_Data_Store->read(Object(WC_Product))
+#2 C:\xampp\htdocs\wordpress\wp-content\themes\firezy\functions.php(527): WC_Product->__construct(2390)
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(290): min_decimal(0)
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(206): WP_Hook->apply_filters(0, Array)
+#5 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1675): apply_filters('woocommerce_qua...', 0, Object(WC_Product_Simple))
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\cart\cart.php(117): woocommerce_quant dans C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\data-stores\class-wc-product-data-store-cpt.php à la ligne 163
+
