@@ -519,6 +519,37 @@ function add_cw_currency_symbol( $custom_currency_symbol, $custom_currency ) {
      }
      return $custom_currency_symbol;
 }
+
+
+add_action( 'woocommerce_before_single_product', 'myFunction', 10 );
+function myFunction() {
+	global $product;
+	$attributes = $product->get_attributes();
+	//echo "<script>alert(".count($attributes).")</script>";
+	if(count($attributes) == 1){
+		// Add min value to the quantity field (default = 1)
+		add_filter('woocommerce_quantity_input_step', 'nsk_allow_decimal');
+		function nsk_allow_decimal($val) {
+			return 0.5;
+		}
+
+		// Add step value to the quantity field (default = 1)
+		add_filter('woocommerce_quantity_input_step', 'nsk_allow_decimal');
+
+		// Removes the WooCommerce filter, that is validating the quantity to be an int
+		remove_filter('woocommerce_stock_amount', 'intval');		
+
+		// Add a filter, that validates the quantity to be a float
+		add_filter('woocommerce_stock_amount', 'floatval');
+	}else{
+		add_filter('woocommerce_quantity_input_step', 'nsk_allow_decimal');
+		function nsk_allow_decimal($val) {
+			return 1;
+		}
+	}
+}
+
+
 // Add min value to the quantity field (default = 1)
 add_filter('woocommerce_quantity_input_min', 'min_decimal');
 function min_decimal($val) {
@@ -526,10 +557,7 @@ function min_decimal($val) {
 }
  
 // Add step value to the quantity field (default = 1)
-add_filter('woocommerce_quantity_input_step', 'nsk_allow_decimal');
-function nsk_allow_decimal($val) {
-    return 0.5;
-}
+
  
 // Removes the WooCommerce filter, that is validating the quantity to be an int
 remove_filter('woocommerce_stock_amount', 'intval');

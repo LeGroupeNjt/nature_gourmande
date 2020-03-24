@@ -102,6 +102,10 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 						<td class="product-quantity" data-title="<?php esc_attr_e( 'Quantity', 'woocommerce' ); ?>">
 						<?php
+						$step = 1;
+                        $attributes = $_product->get_attributes();
+                        if(count($attributes) == 1)
+                            $step = .5;
 						if ( $_product->is_sold_individually() ) {
 							$product_quantity = sprintf( '1 <input type="hidden" name="cart[%s][qty]" value="1" />', $cart_item_key );
 						} else {
@@ -110,7 +114,8 @@ do_action( 'woocommerce_before_cart' ); ?>
 									'input_name'   => "cart[{$cart_item_key}][qty]",
 									'input_value'  => $cart_item['quantity'],
 									'max_value'    => $_product->get_max_purchase_quantity(),
-									'min_value'    => '0',
+                                    'min_value'    => '0',
+                                    'step' => $step,
 									'product_name' => $_product->get_name(),
 								),
 								$_product,
